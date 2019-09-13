@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Randomly</title>
+</head>
+<body>
+    <h1 id="word"></h1>
+    <p id="definition"></p>
+    <script>
+        var dictionary = [
+            {word: 'Apple', definition: 'A fruit'},
+            {word: 'Dictionary', definition: 'A book of words'},
+            {word: 'Internet', definition: 'A series of tubes'},
+        ];
+        (function(){
+            var selection = dictionary[Math.floor(Math.random()*dictionary.length)];
+            for (var key in selection){
+                document.getElementById(key).innerHTML = selection[key];
+            }
+            return;
+        })();
+    </script>
+</body>
+</html>

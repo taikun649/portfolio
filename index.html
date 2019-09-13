@@ -54,7 +54,50 @@
             <p>
 
                   <label id="lblGreetings"></label>
-
+                  <p id="word"></p>
+                  <p>UI is offline. Press Symbol to initiate. </p>
+                  <script>
+                        var dictionary = [
+                            {word: '_NYSSA', definition: 'A fruit'},
+                            {word: '_GERALT', definition: 'A book of words'},
+                            {word: '_DROGON', definition: 'A series of tubes'},
+                                {word: '_CIRI', definition: 'A series of tubes'},
+                                    {word: '_DANTE', definition: 'A series of tubes'},
+                                        {word: 'HIMEKO', definition: 'A series of tubes'},
+                                            {word: '_WILLIAM', definition: 'A series of tubes'},
+                                                {word: '_ROSSWEISSE', definition: 'A series of tubes'},
+                                                    {word: '_ODOGARON', definition: 'A series of tubes'},
+                                                    {word: '_BAGEL', definition: 'A series of tubes'},
+                                                    {word: '_PICKLE', definition: 'A series of tubes'},
+                                                    {word: '_HERRSCHER', definition: 'A series of tubes'},
+                                                    {word: '_KASLANA', definition: 'A series of tubes'},
+                                                    {word: '_SEELE', definition: 'A series of tubes'},
+                                                    {word: '_XYN', definition: 'A series of tubes'},
+                                                    {word: '_KATARN', definition: 'A series of tubes'},
+                                                    {word: '_ODOGARON', definition: 'A series of tubes'},
+                                                    {word: '_ARANEA', definition: 'A series of tubes'},
+                                                    {word: '_PEWDS', definition: 'A series of tubes'},
+                                                    {word: '_MxR', definition: 'A series of tubes'},
+                                                    {word: '_DASH', definition: 'A series of tubes'},
+                                                    {word: '_NOCTIS', definition: 'A series of tubes'},
+                                                    {word: '_ECLAIR', definition: 'A series of tubes'},
+                                                    {word: '_SIRIS', definition: 'A series of tubes'},
+                                                    {word: '_KEANU', definition: 'A series of tubes'},
+                                                    {word: '_JWICK', definition: 'A series of tubes'},
+                                                    {word: '_NYANC', definition: 'A series of tubes'},
+                                                    {word: '_BLINK', definition: 'A series of tubes'},
+                                                    {word: '_PYRRHA', definition: 'A series of tubes'},
+                                                    {word: '_CHURCH', definition: 'A series of tubes'},
+                                                    {word: '_CABOOSE', definition: 'A series of tubes'},
+                        ];
+                        (function(){
+                            var selection = dictionary[Math.floor(Math.random()*dictionary.length)];
+                            for (var key in selection){
+                                document.getElementById(key).innerHTML = selection[key];
+                            }
+                            return;
+                        })();
+                    </script>
 
               <script>
                   var myDate = new Date();
@@ -70,9 +113,12 @@
                       greet = 'The night is young';
 
                   document.getElementById('lblGreetings').innerHTML =
-                      '<b>' + greet + '</b>, User.';
+                      '<b>' + greet + '</b>, Guest:';
+
+
+
               </script>
-              UI offline. Tap symbol to begin. </p>
+             </p>
           </div>
 
 
