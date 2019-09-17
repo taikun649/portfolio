@@ -40,6 +40,17 @@ opacity: 0.4;
 
 
   nav ul li:nth-child(1) a {
+
+    background: linear-gradient(#04255b, black);
+    border-style: ridge;
+    border-color: #4b4c47;
+    opacity: 0.7;
+    border-radius: 20px 50px;
+
+
+
+  }
+  nav ul li:nth-child(2) a {
     background: linear-gradient(#b56b0a, #713105);
     border-style: ridge;
     border-color: #4b4c47;
@@ -47,15 +58,6 @@ opacity: 0.4;
     opacity: 0.7;
     border-radius: 10px;
 
-
-
-  }
-  nav ul li:nth-child(2) a {
-    background: linear-gradient(#04255b, black);
-    border-style: ridge;
-    border-color: #4b4c47;
-    opacity: 0.7;
-    border-radius: 20px 50px;
 
 
   }
